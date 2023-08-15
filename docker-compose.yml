@@ -1,0 +1,17 @@
+version: '3.9'
+services:
+  bot:
+    build: .
+    container_name: bot
+    restart: always
+    env_file:
+      - ./.env
+    ports:
+      - '3100:3100'
+    volumes:
+      - type: bind
+        source: ./dist
+        target: /Bot/dist
+    environment:
+      NODE_ENV: production
+    command: pm2-runtime ./dist/index.js

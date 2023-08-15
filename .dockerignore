@@ -1,0 +1,17 @@
+*/temp*
+*/*/temp*
+temp?
+*.md
+README-secret.md
+!README*.md
+node_modules/
+Dockerfile
+.git
+.gitignore
+docker-compose*
+db
+log/*
+logs/*
+.vscode
+.DS_Store
+.env
